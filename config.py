@@ -26,19 +26,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "39020336")
+    API_HASH  = os.environ.get("API_HASH", "b6b6742ac6ad6936dfc88caeac95b7a4")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8827815994:AAGZppDWddjOmBbJNkhNsP8nHeIPt63FrF4") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","pyro-botz")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Maggie12:Deepta123@cluster0.g4syvio.mongodb.net/?appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin.strip()) for admin in re.split(r'[, ]+', os.environ.get('ADMIN', '')) if admin.strip().replace('-', '').isdigit()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    START_PIC   = os.environ.get("START_PIC", "https://ibb.co/zT20c5sG")
+    ADMIN       = [int(admin.strip()) for admin in re.split(r'[, ]+', os.environ.get('ADMIN', '5953067512 7156099919')) if admin.strip().replace('-', '').isdigit()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1004429996382") 
     JOIN_CHANNEL = os.environ.get("JOIN_CHANNEL", "")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
