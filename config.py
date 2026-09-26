@@ -38,8 +38,8 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://ibb.co/zT20c5sG")
     ADMIN       = [int(admin.strip()) for admin in re.split(r'[, ]+', os.environ.get('ADMIN', '5953067512 7156099919')) if admin.strip().replace('-', '').isdigit()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1004429996382") 
-    JOIN_CHANNEL = os.environ.get("JOIN_CHANNEL", "-1004315639213")
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "ongoing_letest") 
+    JOIN_CHANNEL = os.environ.get("JOIN_CHANNEL", "-1004429996382")
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1004315639213"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
